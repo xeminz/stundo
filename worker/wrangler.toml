@@ -1,0 +1,17 @@
+name = "stundo"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# Alle 5 Minuten prüfen, ob eine Mitteilung fällig ist
+[triggers]
+crons = ["*/5 * * * *"]
+
+[vars]
+VAPID_SUBJECT = "https://xeminz.github.io/stundo/"
+VAPID_PUBLIC = "BCS9DJ5rXWR3plD9uJOm8LHSAljQioPV8le2a5MqPxZifgHQstUA1-bOo29WWvfc-DhVvMLeLoO1oA9mHeX5YqA"
+ALLOWED_ORIGINS = "https://xeminz.github.io,http://localhost:5174"
+
+# Wird mit "npx wrangler kv namespace create SP" angelegt, dann die id hier eintragen
+[[kv_namespaces]]
+binding = "SP"
+id = "2d4a1a4da0fd4c7ab1cbccf23a29e8b5"

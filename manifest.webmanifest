@@ -1,0 +1,17 @@
+{
+  "name": "Stundo",
+  "short_name": "Stundo",
+  "description": "HÜs, Tests und Stundenplan. Mit Erinnerung nach Schulschluss und KI-Lernplan.",
+  "lang": "de",
+  "id": "./app/",
+  "start_url": "./app/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f3ec",
+  "theme_color": "#2457d6",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
